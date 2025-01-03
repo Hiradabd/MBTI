@@ -22,8 +22,23 @@ function calculateResult() {
         'INFP': 'The Mediator: Idealistic, empathetic, open-minded, and creative.',
         'ISTJ': 'The Logistician: Practical, factual, dependable, and responsible.',
         'ENFP': 'The Campaigner: Enthusiastic, creative, sociable, and free-spirited.',
-        // Add descriptions for all 16 types
+        'ESFP': 'The Entertainer: Spontaneous, energetic, and enthusiastic.',
+        'ISFJ': 'The Defender: Reliable, patient, and practical.',
+        'ENTP': 'The Debater: Innovative, curious, and visionary.',
+        'INTJ': 'The Architect: Strategic, logical, and driven by knowledge.',
+        'ISFP': 'The Adventurer: Flexible, charming, and artistic.',
+        'ESFJ': 'The Consul: Caring, sociable, and popular.',
+        'ENTJ': 'The Commander: Bold, imaginative, and strong-willed.',
+        'INFJ': 'The Advocate: Quiet, mystical, and inspiring.',
+        'ISTP': 'The Virtuoso: Bold, practical, and master of all kinds of tools.',
+        'ENFJ': 'The Protagonist: Charismatic, inspiring, and a natural leader.',
+        'INTP': 'The Logician: Innovative, intellectual, and detached.',
+        'ESTP': 'The Entrepreneur: Energetic, perceptive, and direct.'
     };
 
     document.getElementById('result').innerHTML = 'Your MBTI Type: ' + result + '<br>' + (descriptions[result] || 'No description available.');
+}
+
+function toggleTheme() {
+    document.body.classList.toggle('dark');
 }
