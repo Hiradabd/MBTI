@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تست شخصیت MBTI</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">تست شخصیت MBTI</h1>
+        <form id="mbtiForm">
+            <div class="question">
+                <p id="q1">سوال ۱: آیا ترجیح می‌دهید وقت خود را با دیگران بگذرانید؟</p>
+                <label class="radio"><input type="radio" name="q1" value="E" required> بله</label>
+                <label class="radio"><input type="radio" name="q1" value="I" required> خیر</label>
+            </div>
+            <div class="question">
+                <p id="q2">سوال ۲: آیا بیشتر به واقعیت‌ها اعتماد دارید یا شهود؟</p>
+                <label class="radio"><input type="radio" name="q2" value="S" required> واقعیت‌ها</label>
+                <label class="radio"><input type="radio" name="q2" value="N" required> شهود</label>
+            </div>
+            <div class="question">
+                <p id="q3">سوال ۳: آیا تصمیمات خود را بر اساس منطق یا احساسات می‌گیرید؟</p>
+                <label class="radio"><input type="radio" name="q3" value="T" required> منطق</label>
+                <label class="radio"><input type="radio" name="q3" value="F" required> احساسات</label>
+            </div>
+            <div class="question">
+                <p id="q4">سوال ۴: آیا ترجیح می‌دهید برنامه‌ریزی کنید یا خودجوش عمل کنید؟</p>
+                <label class="radio"><input type="radio" name="q4" value="J" required> برنامه‌ریزی</label>
+                <label class="radio"><input type="radio" name="q4" value="P" required> خودجوش</label>
+            </div>
+            <div class="question">
+                <p id="q5">سوال ۵: آیا معرفی خود به دیگران برای شما آسان است؟</p>
+                <label class="radio"><input type="radio" name="q5" value="E" required> بله</label>
+                <label class="radio"><input type="radio" name="q5" value="I" required> خیر</label>
+            </div>
+            <div class="question">
+                <p id="q6">سوال ۶: آیا ترجیح می‌دهید به جزئیات توجه کنید یا تصویر کلی را ببینید؟</p>
+                <label class="radio"><input type="radio" name="q6" value="S" required> جزئیات</label>
+                <label class="radio"><input type="radio" name="q6" value="N" required> تصویر کلی</label>
+            </div>
+            <div class="question">
+                <p id="q7">سوال ۷: آیا حتی اگر به معنی غیرمحبوب بودن باشد، به منطق تکیه می‌کنید؟</p>
+                <label class="radio"><input type="radio" name="q7" value="T" required> بله</label>
+                <label class="radio"><input type="radio" name="q7" value="F" required> خیر</label>
+            </div>
+            <div class="question">
+                <p id="q8">سوال ۸: آیا ترجیح می‌دهید برنامه داشته باشید یا انعطاف‌پذیر باشید؟</p>
+                <label class="radio"><input type="radio" name="q8" value="J" required> برنامه</label>
+                <label class="radio"><input type="radio" name="q8" value="P" required> انعطاف‌پذیر</label>
+            </div>
+            <button type="button" class="submit-btn" onclick="calculateResult()">ارسال</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <div id="theme-switcher-container">
+        <label class="switch">
+            <input type="checkbox" id="theme-switcher" onclick="toggleTheme()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
